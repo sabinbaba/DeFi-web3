@@ -2,14 +2,14 @@ const { ethers } = require("hardhat");
 
 async function main() {
   // 🎯 CHANGE THIS ADDRESS: Paste your SecureVault (or VulnerableVault) address here!
-  const TARGET_VAULT_ADDRESS = "0x43a4B9049cF78642539b2e6e6a58330b30dB1689";
+  const TARGET_VAULT_ADDRESS = "0xB1F7E6393c4C6F4fB82e9c09fA91ac47fB8E2c31";
 
   // 1. Get the target contract
   // Note: We can use the "VulnerableVault" ABI for both, because both contracts have identical deposit/withdraw functions!
   const targetVault = await ethers.getContractAt("VulnerableVault", TARGET_VAULT_ADDRESS);
 
-  console.log(`1. Funding the target vault (${TARGET_VAULT_ADDRESS}) with 0.005 ETH...`);
-  const fundTx = await targetVault.deposit({ value: ethers.parseEther("0.005") });
+  console.log(`1. Funding the target vault (${TARGET_VAULT_ADDRESS}) with 0.001 ETH...`);
+  const fundTx = await targetVault.deposit({ value: ethers.parseEther("0.001") });
   await fundTx.wait();
   console.log("✅ Vault funded! It now has money to test.");
 

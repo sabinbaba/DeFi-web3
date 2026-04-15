@@ -10,7 +10,7 @@ async function main() {
   console.log("Starting Stress Test on:", PROXY_ADDRESS);
   
   // Sending 5 transactions back-to-back
-  const NUM_TXS = 50;
+  const NUM_TXS = 5;
   const depositAmount = ethers.parseEther("0.0001");
 
   console.log(`Sending ${NUM_TXS} consecutive transactions to calculate TPS and Latency...\n`);
