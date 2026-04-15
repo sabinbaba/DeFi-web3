@@ -1,0 +1,346 @@
+{
+  "manifestVersion": "3.2",
+  "proxies": [
+    {
+      "address": "0xE16BCB5cAA43a4d1C27dAA1117f29a9871E2Bd90",
+      "txHash": "0xd7db1d032dc06ddd232acc33bdcc440755d0d722aa6d92224d055dce84ad6756",
+      "kind": "uups"
+    }
+  ],
+  "impls": {
+    "9e9130713e472b82916389a8d8aa2e28a498bc73e1901a3bfca5cef8ac3abfa1": {
+      "address": "0x77DEdaa7278B924cc1cfC430493877277fB8Ea13",
+      "txHash": "0x2b3ff4f6f7c2103faaf7ad95cd26781f5ba48395525fe4281137c57212d2955c",
+      "layout": {
+        "solcVersion": "0.8.22",
+        "storage": [
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "DeFiVaultV1",
+            "src": "contracts\\DeFiVaultV1.sol:29"
+          },
+          {
+            "label": "balances",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "DeFiVaultV1",
+            "src": "contracts\\DeFiVaultV1.sol:47"
+          },
+          {
+            "label": "totalDeposits",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "DeFiVaultV1",
+            "src": "contracts\\DeFiVaultV1.sol:50"
+          },
+          {
+            "label": "totalUsers",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "DeFiVaultV1",
+            "src": "contracts\\DeFiVaultV1.sol:51"
+          },
+          {
+            "label": "isUser",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "DeFiVaultV1",
+            "src": "contracts\\DeFiVaultV1.sol:53"
+          },
+          {
+            "label": "userDocuments",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_string_storage)",
+            "contract": "DeFiVaultV1",
+            "src": "contracts\\DeFiVaultV1.sol:55"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)264_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_string_storage)": {
+            "label": "mapping(address => string)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    },
+    "e0854dc87142515f8856d5ce89f28bad2083b1f0ea5d91a929a07b8b81cbca1a": {
+      "address": "0x85128738616d51Aa9eaE2eE64786423DC9B3f3d2",
+      "txHash": "0xb09a01565852d3edcd8aa1fd29ba1bf925b3f80c2d27cd8d058121e1088610fc",
+      "layout": {
+        "solcVersion": "0.8.22",
+        "storage": [
+          {
+            "label": "_status",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "DeFiVaultV2",
+            "src": "contracts\\DeFiVaultV2.sol:26"
+          },
+          {
+            "label": "balances",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "DeFiVaultV2",
+            "src": "contracts\\DeFiVaultV2.sol:45"
+          },
+          {
+            "label": "totalDeposits",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_uint256",
+            "contract": "DeFiVaultV2",
+            "src": "contracts\\DeFiVaultV2.sol:46"
+          },
+          {
+            "label": "totalUsers",
+            "offset": 0,
+            "slot": "3",
+            "type": "t_uint256",
+            "contract": "DeFiVaultV2",
+            "src": "contracts\\DeFiVaultV2.sol:48"
+          },
+          {
+            "label": "isUser",
+            "offset": 0,
+            "slot": "4",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "DeFiVaultV2",
+            "src": "contracts\\DeFiVaultV2.sol:49"
+          },
+          {
+            "label": "userDocuments",
+            "offset": 0,
+            "slot": "5",
+            "type": "t_mapping(t_address,t_string_storage)",
+            "contract": "DeFiVaultV2",
+            "src": "contracts\\DeFiVaultV2.sol:50"
+          },
+          {
+            "label": "emergencyStop",
+            "offset": 0,
+            "slot": "6",
+            "type": "t_bool",
+            "contract": "DeFiVaultV2",
+            "src": "contracts\\DeFiVaultV2.sol:65"
+          },
+          {
+            "label": "depositTimestamps",
+            "offset": 0,
+            "slot": "7",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "DeFiVaultV2",
+            "src": "contracts\\DeFiVaultV2.sol:67"
+          },
+          {
+            "label": "maxWithdrawLimit",
+            "offset": 0,
+            "slot": "8",
+            "type": "t_uint256",
+            "contract": "DeFiVaultV2",
+            "src": "contracts\\DeFiVaultV2.sol:69"
+          },
+          {
+            "label": "interestRate",
+            "offset": 0,
+            "slot": "9",
+            "type": "t_uint256",
+            "contract": "DeFiVaultV2",
+            "src": "contracts\\DeFiVaultV2.sol:70"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_struct(InitializableStorage)264_storage": {
+            "label": "struct Initializable.InitializableStorage",
+            "members": [
+              {
+                "label": "_initialized",
+                "type": "t_uint64",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "_initializing",
+                "type": "t_bool",
+                "offset": 8,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_struct(OwnableStorage)13_storage": {
+            "label": "struct OwnableUpgradeable.OwnableStorage",
+            "members": [
+              {
+                "label": "_owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_string_storage)": {
+            "label": "mapping(address => string)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        },
+        "namespaces": {
+          "erc7201:openzeppelin.storage.Ownable": [
+            {
+              "contract": "OwnableUpgradeable",
+              "label": "_owner",
+              "type": "t_address",
+              "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:24",
+              "offset": 0,
+              "slot": "0"
+            }
+          ],
+          "erc7201:openzeppelin.storage.Initializable": [
+            {
+              "contract": "Initializable",
+              "label": "_initialized",
+              "type": "t_uint64",
+              "src": "@openzeppelin\\contracts\\proxy\\utils\\Initializable.sol:69",
+              "offset": 0,
+              "slot": "0"
+            },
+            {
+              "contract": "Initializable",
+              "label": "_initializing",
+              "type": "t_bool",
+              "src": "@openzeppelin\\contracts\\proxy\\utils\\Initializable.sol:73",
+              "offset": 8,
+              "slot": "0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

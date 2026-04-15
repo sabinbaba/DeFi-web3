@@ -1,0 +1,8 @@
+{
+  "sepolia": {
+    "SecureVault": {
+      "address": "0x43a4B9049cF78642539b2e6e6a58330b30dB1689",
+      "startBlock": 0
+    }
+  }
+}

@@ -1,0 +1,1 @@
+This DeFi Vault is protected by SecureVault.sol and decentralized via IPFS. Verified by NIT Cybersecurity Department.
