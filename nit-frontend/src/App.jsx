@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import History from "./History";
 import Dashboard from "./Dashboard";
 import Deposit from "./Deposit";
 import Withdraw from "./Withdraw";
@@ -88,11 +89,12 @@ export default function App() {
     fetchBalance    // NEW: Function to trigger an update after depositing
   };
 
-  return (
-    <>
-      {page === "dashboard" && <Dashboard {...pageProps} />}
-      {page === "deposit"   && <Deposit   {...pageProps} />}
-      {page === "withdraw"  && <Withdraw  {...pageProps} />}
-    </>
-  );
+return (
+  <>
+    {page === "dashboard" && <Dashboard {...pageProps} />}
+    {page === "deposit"   && <Deposit   {...pageProps} />}
+    {page === "withdraw"  && <Withdraw  {...pageProps} />}
+    {page === "history"   && <History   {...pageProps} />}
+  </>
+);
 }

@@ -85,7 +85,9 @@ export function Sidebar({ active, onNavigate }) {
     { key: "dashboard", label: "Dashboard" },
     { key: "deposit", label: "Deposit" },
     { key: "withdraw", label: "Withdraw" },
+    { key: "history", label: "History" }, // <-- ADD THIS LINE
   ];
+  // ... rest of the sidebar code
   return (
     <div className="fv-sidebar">
       <div className="fv-brand">
