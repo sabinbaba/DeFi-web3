@@ -15,7 +15,7 @@ async function uploadToIPFS() {
         // --- CONFIGURATION ---
         // Change 'README.md' to whatever file you want to upload
         //const fileName = 'legal-disclaimer.txt'; 
-        const fileName = 'gas-report.txt'; 
+        const fileName = 'test.txt'; 
         const filePath = path.join(__dirname, '..', fileName);
         // ---------------------
 
